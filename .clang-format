@@ -1,0 +1,11 @@
+BreakStringLiterals: false
+ColumnLimit: 0
+PenaltyBreakComment: 0
+SortIncludes: true
+IndentWidth: 4
+UseTab: Never
+TabWidth: 4
+
+AlignTrailingComments: true
+AllowShortBlocksOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Always
