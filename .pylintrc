@@ -3,4 +3,4 @@ disable=
     CO115, # missing-class-docstring
     C0114, # missing-module-docstring
     CO116, # missing-function-docstring
-
+    missing-function-docstring
