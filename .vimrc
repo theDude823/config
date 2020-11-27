@@ -97,9 +97,19 @@ let g:ale_linters = {'vue': ['eslint']}
 source /home/amaimon43/.vim/lsp-examples-master/vimrc.generated
 let g:ycm_confirm_extra_conf = 0
 
+"ycm for css, scss
+let g:ycm_semantic_triggers = {
+    \   'css': [ 're!^', 're!^\s+', ':',': '],
+    \   'scss': [ 're!^', 're!^\s+', ':',': '],
+    \ }
+
+
 "polyglot:
 let g:python_highlight_space_errors = 0
 " let g:json_highlight_space_errors = 0
+
+"emmet:
+let g:user_emmet_leader_key=','
 
 "vim-vue
 let g:vue_pre_processors = 'detect_on_enter'
