@@ -79,6 +79,7 @@ set number relativenumber
 " :set pastetoggle=<leader>pm
 
 "ale:
+let g:ale_set_balloons = 0
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
             \   '*': ['remove_trailing_lines', 'trim_whitespace'],
@@ -109,6 +110,8 @@ let g:python_highlight_space_errors = 0
 " let g:json_highlight_space_errors = 0
 
 "emmet:
+let g:user_emmet_install_global = 0
+autocmd FileType html,css,sass,vue EmmetInstall
 let g:user_emmet_leader_key=','
 
 "vim-vue
@@ -133,6 +136,65 @@ function! NERDCommenter_after()
     let g:ft = ''
   endif
 endfunction
+
+
+
+"nerdtree stuff
+noremap <F2> :NERDTreeToggle<CR>
+let NERDTreeAutoDeleteBuffer = 1
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+let NERDTreeChDirMode=2
+map <leader>n :NERDTree ~/<CR>
+map <leader>f :NERDTreeFind<cr>
+
+" ycm stuff:
+let g:ycm_auto_hover = ''
+nnoremap gd :YcmCompleter GoTo<CR>
+
+
+"For fzf
+noremap <leader>t :Files<cr>
+" nnoremap <silent> <leader>t :GFiles --cached --others --exclude-standard<cr>
+let $FZF_DEFAULT_COMMAND ='rg --files -g "!{**/node_modules/*}" -g "!*.o"'
+noremap <leader>h :History<cr>
+
+"ultisnips:
+"ue for UltiSnipsEdit
+nnoremap <leader>ue :UltiSnipsEdit<cr>
+"vr for editing vimrc
+nnoremap <silent> <Leader>vr :e ~/.vimrc<CR>
+"c for code.cpp
+nnoremap <silent> <Leader>c :e ~/cpp_code/code.cpp<CR>
+"d for del.py
+nnoremap <silent> <Leader>d :e ~/python_code/del.py<CR>
+
+
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
+"it shows the end } but removes dot repetability.
+let g:pear_tree_smart_backspace = 1
+let g:pear_tree_repeatable_expand = 0
+let g:pear_tree_smart_closers = 1
+let g:pear_tree_smart_openers = 1
+
+"viminspector:
+let g:vimspector_enable_mappings = 'HUMAN'
+" packadd! vimspector
+"configs for vimspector:
+nmap <leader>dd :call vimspector#Launch()<CR>
+nmap <leader>dx :VimspectorReset<CR>
+nmap <leader>de :VimspectorEval
+nmap <leader>dw :VimspectorWatch
+
 
 "Vim plug
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -169,57 +231,3 @@ Plug 'posva/vim-vue'
 " Plug 'ryanoasis/vim-devicons'
 " Plug 'ThePrimeagen/vim-be-good'
 call plug#end()
-
-"nerdtree stuff
-noremap <F2> :NERDTreeToggle<CR>
-let NERDTreeAutoDeleteBuffer = 1
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
-let NERDTreeChDirMode=2
-map <leader>n :NERDTree ~/<CR>
-map <leader>f :NERDTreeFind<cr>
-
-"For fzf
-noremap <leader>t :Files<cr>
-" nnoremap <silent> <leader>t :GFiles --cached --others --exclude-standard<cr>
-let $FZF_DEFAULT_COMMAND ='rg --files -g "!{**/node_modules/*}" -g "!*.o"'
-noremap <leader>h :History<cr>
-
-"ultisnips:
-"ue for UltiSnipsEdit
-nnoremap <leader>ue :UltiSnipsEdit<cr>
-"vr for editing vimrc
-nnoremap <silent> <Leader>vr :e ~/.vimrc<CR>
-"c for code.cpp
-nnoremap <silent> <Leader>c :e ~/cpp_code/code.cpp<CR>
-"d for del.py
-nnoremap <silent> <Leader>d :e ~/python_code/del.py<CR>
-
-" ycm stuff:
-let g:ycm_auto_hover = ''
-nnoremap gd :YcmCompleter GoTo<CR>
-
-" make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-n>'
-
-" better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-
-"it shows the end } but removes dot repetability.
-let g:pear_tree_smart_backspace = 1
-let g:pear_tree_repeatable_expand = 0
-let g:pear_tree_smart_closers = 1
-let g:pear_tree_smart_openers = 1
-
-"viminspector:
-let g:vimspector_enable_mappings = 'HUMAN'
-" packadd! vimspector
-"configs for vimspector:
-nmap <leader>dd :call vimspector#Launch()<CR>
-nmap <leader>dx :VimspectorReset<CR>
-nmap <leader>de :VimspectorEval
-nmap <leader>dw :VimspectorWatch
