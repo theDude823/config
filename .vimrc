@@ -74,6 +74,9 @@ set number
 set number relativenumber
 " noremap <leader>n :set rnu! nu!<cr>
 
+" Assembly: set .asm files to nasm
+autocmd BufNewFile,BufRead *.asm set ft=masm
+
 "f3 to toggle between paste mode and no... when in paste mode auto indent will
 "be off
 " :set pastetoggle=<leader>pm
