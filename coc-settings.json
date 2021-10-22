@@ -1,0 +1,5 @@
+{
+    "diagnostic.displayByAle": true,
+    "coc.preferences.formatOnSaveFiletypes": ["vue","css", "markdown", "html",],
+    "prettier.disableLanguages": []
+}
