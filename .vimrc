@@ -82,6 +82,14 @@ autocmd BufNewFile,BufRead *.asm set ft=masm
 " :set pastetoggle=<leader>pm
 
 "ale:
+"-ale on css isn't used (prettier needs to installed locally for each project)
+"so install coc-prettier
+"-eslint's config should also be kept locally. (it can be installed globally
+"tho.)
+"- add: "diagnostic.displayByAle": true in :cocconfig for ale and coc to work
+" together
+let g:ale_disable_lsp = 1
+" ^ add this for ale and coc to work togehter
 let g:ale_hover_cursor = 0
 let g:ale_set_balloons = 0
 let g:ale_fix_on_save = 1
@@ -97,9 +105,12 @@ let g:ale_fixers = {
             \}
 let g:ale_linter_aliases = {'vue': ['vue', 'javascript']}
 let g:ale_linters = {'vue': ['eslint']}
+"^ these 2 lines are sus
+
+
 
 "ycm for vue
-source /home/amaimon43/.vim/lsp-examples-master/vimrc.generated
+source /home/bishant_baniya/.vim/lsp-examples-master/vimrc.generated
 let g:ycm_confirm_extra_conf = 0
 
 "ycm for css, scss
@@ -227,6 +238,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-repeat'
 Plug 'puremourning/vimspector'
 Plug 'posva/vim-vue'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 """""
 """""
 """""
@@ -235,3 +247,5 @@ Plug 'posva/vim-vue'
 " Plug 'ryanoasis/vim-devicons'
 " Plug 'ThePrimeagen/vim-be-good'
 call plug#end()
+"don't load ycm
+let g:loaded_youcompleteme = 1
