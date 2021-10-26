@@ -1,0 +1,6 @@
+{
+    "window.zoomLevel": 1,
+    "vim.vimrc.enable": true,
+    "editor.lineNumbers": "relative",
+    "workbench.colorTheme": "Gruvbox Dark Hard"
+}
