@@ -2,5 +2,8 @@
     "window.zoomLevel": 1,
     "vim.vimrc.enable": true,
     "editor.lineNumbers": "relative",
-    "workbench.colorTheme": "Gruvbox Dark Hard"
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // Set the default
+    "editor.formatOnSave": true,
 }
