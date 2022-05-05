@@ -1,5 +1,5 @@
 {
     "diagnostic.displayByAle": true,
-    "coc.preferences.formatOnSaveFiletypes": ["vue","css", "markdown", "html",],
+    "coc.preferences.formatOnSaveFiletypes": ["vue","css", "javascript", "markdown", "html",],
     "prettier.disableLanguages": []
 }
