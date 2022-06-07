@@ -5,11 +5,11 @@
   "editor.lineNumbers": "relative",
   "workbench.colorTheme": "Gruvbox Dark Hard",
   // Set the default
+  "vim.useSystemClipboard": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
   },
-  "liveServer.settings.donotShowInfoMsg": true,
-  "workbench.activityBar.visible": false
+  "liveServer.settings.donotShowInfoMsg": true
 }
