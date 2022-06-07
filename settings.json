@@ -1,5 +1,5 @@
 {
-  //vim, vetur, tailwind, prettier, live-server,  headwind, intellisense-css
+  // color highlight, gruvbox theme, vim, volar, tailwind, prettier, live-server,  headwind, intellisense-css
   "window.zoomLevel": 1,
   "vim.vimrc.enable": true,
   "editor.lineNumbers": "relative",
@@ -11,5 +11,6 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
   },
-  "liveServer.settings.donotShowInfoMsg": true
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.activityBar.visible": false
 }
