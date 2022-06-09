@@ -1,5 +1,5 @@
 {
-  // color highlight, gruvbox theme, vim, volar, tailwind, prettier, live-server,  headwind, intellisense-css
+  // vue vscode snippet(sarah.drasner), color highlight, gruvbox theme, vim, volar, tailwind, prettier, live-server,  headwind, intellisense-css
   "window.zoomLevel": 1,
   "vim.vimrc.enable": true,
   "editor.lineNumbers": "relative",
@@ -12,5 +12,6 @@
     "editor.defaultFormatter": "ms-python.python"
   },
   "liveServer.settings.donotShowInfoMsg": true,
+  "editor.tabCompletion": "onlySnippets",
   "workbench.activityBar.visible": false
 }
