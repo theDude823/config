@@ -13,5 +13,6 @@
   },
   "liveServer.settings.donotShowInfoMsg": true,
   "editor.tabCompletion": "onlySnippets",
-  "workbench.activityBar.visible": false
+  "workbench.activityBar.visible": false,
+  "update.mode": "none"
 }
