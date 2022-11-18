@@ -13,9 +13,10 @@
   },
   "liveServer.settings.donotShowInfoMsg": true,
   "editor.tabCompletion": "onlySnippets",
-  "update.mode": "none"
+  "update.mode": "none",
   //to validate @apply, disable these and install stylelint (check joplin)
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false
+  // give comma after the last line ^
 }
