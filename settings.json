@@ -13,6 +13,9 @@
   },
   "liveServer.settings.donotShowInfoMsg": true,
   "editor.tabCompletion": "onlySnippets",
-  "workbench.activityBar.visible": false,
   "update.mode": "none"
+  //to validate @apply, disable these and install stylelint (check joplin)
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
 }
