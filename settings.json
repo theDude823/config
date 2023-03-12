@@ -3,7 +3,7 @@
   "window.zoomLevel": 1,
   "vim.vimrc.enable": true,
   "editor.lineNumbers": "relative",
-  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.colorTheme": "Gruvbox Dark Medium",
   // Set the default
   "vim.useSystemClipboard": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -17,6 +17,7 @@
   //to validate @apply, disable these and install stylelint (check joplin)
   "css.validate": false,
   "less.validate": false,
-  "scss.validate": false
+  "scss.validate": false,
   // give comma after the last line ^
+  "volar.inlayHints.eventArgumentInInlineHandlers": false
 }
