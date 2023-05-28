@@ -19,5 +19,14 @@
   "less.validate": false,
   "scss.validate": false,
   // give comma after the last line ^
-  "volar.inlayHints.eventArgumentInInlineHandlers": false
+  "volar.inlayHints.eventArgumentInInlineHandlers": false,
+  "workbench.activityBar.visible": false,
+  // leader s saves
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["leader", "s"],
+      "commands": ["workbench.action.files.save"]
+    }
+  ]
 }
