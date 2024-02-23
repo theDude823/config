@@ -183,6 +183,7 @@ nnoremap <silent> <Leader>vr :e ~/.vimrc<CR>
 nnoremap <silent> <Leader>c :e ~/cpp_code/code.cpp<CR>
 "d for del.py
 nnoremap <silent> <Leader>d :e ~/python_code/del.py<CR>
+" nnoremap <silent> <Leader>js :e ~/js_code/js.js<CR>
 
 
 " make YCM compatible with UltiSnips (using supertab)
@@ -222,7 +223,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdcommenter'
 Plug 'mattn/emmet-vim'
 Plug 'dense-analysis/ale'
-Plug 'ycm-core/YouCompleteMe'
+" Plug 'ycm-core/YouCompleteMe'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
@@ -249,3 +250,5 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 "don't load ycm
 let g:loaded_youcompleteme = 1
+"remove markdown indent while making lists
+let g:vim_markdown_new_list_item_indent = 0
