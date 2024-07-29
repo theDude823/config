@@ -252,3 +252,5 @@ call plug#end()
 let g:loaded_youcompleteme = 1
 "remove markdown indent while making lists
 let g:vim_markdown_new_list_item_indent = 0
+
+let g:coc_node_path = '~/.nvm/versions/node/v20.16.0/bin/node'
