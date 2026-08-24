@@ -254,3 +254,7 @@ let g:loaded_youcompleteme = 1
 let g:vim_markdown_new_list_item_indent = 0
 
 let g:coc_node_path = '~/.nvm/versions/node/v20.16.0/bin/node'
+
+"Press ENTER or type command to continue after u zoom in after saving in gvim
+set cmdheight=2
+
